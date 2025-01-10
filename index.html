@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/5b00cec808.js" crossorigin="anonymous"></script>
-    <title>Bolg</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milk Product Carousel</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Riaxul Islam</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, est?</p>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="logo">milk<span>🍼</span></div>
+      <nav class="nav">
+        <a href="#">Yogurt</a>
+        <a href="#">Milk</a>
+        <a href="#">Blog</a>
+      </nav>
+      <div class="icons">
+        <button class="icon search">🔍</button>
+        <button class="icon cart">🛒</button>
+      </div>
+    </header>
+
+    <!-- Product Carousel -->
+    <div class="carousel">
+      <button class="arrow left">←</button>
+      <div class="carousel-track">
+        <div class="card">
+          <img src="banana.png" alt="Banana Milk">
+          <h3>Banana</h3>
+          <p>500 ml</p>
+          <button class="shop-btn">Shop</button>
+        </div>
+        <div class="card active">
+          <img src="blueberry-mint.png" alt="Blueberry Mint Milk">
+          <h3>Blueberry + Mint</h3>
+          <p>500 ml</p>
+          <button class="shop-btn">Shop</button>
+        </div>
+        <div class="card">
+          <img src="strawberry-raspberry.png" alt="Strawberry Raspberry Milk">
+          <h3>Strawberry + Raspberry</h3>
+          <p>500 ml</p>
+          <button class="shop-btn">Shop</button>
+        </div>
+      </div>
+      <button class="arrow right">→</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
